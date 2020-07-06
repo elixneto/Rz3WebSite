@@ -61,7 +61,7 @@ section {
     background-image: url(./imgs/words.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(.045);
+    filter: brightness(.035);
 }
 
 .circle {
@@ -113,16 +113,30 @@ section {
     transition: font-size .3s ease;
 }
 
-.partners {
+.section-three{
+    height: 500px;
+}
+.section-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/services.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(.04);
+}
+
+.section-four {
     height: 290px;
     background-color: #dedede;
 }
-
-.partners img {
+.section-four img {
     filter: grayscale(100%);
 }
-
-.partners img:hover {
+.section-four img:hover {
     filter: grayscale(0%);
 }
 
