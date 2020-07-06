@@ -23,7 +23,6 @@ section {
     position: relative;
     text-align: center;
     display: table;
-    height: 750px;
     width: 100%;
 }
 
@@ -33,6 +32,9 @@ section {
     vertical-align: middle;
 }
 
+.section-one{
+    height: 750px;
+}
 .section-one::before {
     content: '';
     position: absolute;
@@ -42,9 +44,13 @@ section {
     height: 100%;
     background-image: url(./imgs/stationwork_1.jpg);
     background-repeat: no-repeat;
-    filter: opacity(.08);
+    filter: opacity(.15);
 }
 
+.section-two{
+    height: 600px;
+    box-shadow: 0px 0px 12px 4px black;
+}
 .section-two::before {
     content: '';
     position: absolute;
@@ -55,23 +61,80 @@ section {
     background-image: url(./imgs/words.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(.03);
+    filter: brightness(.045);
 }
 
 .circle {
     border-radius: 50%;
-    border: 5px solid #00a9d3;
+    border: 10px solid #00a9d3;
     width: 200px;
     height: 200px;
     display: inline-block;
     margin-bottom: 20px;
     text-align: center;
     position: relative;
+
+    -webkit-transition: border-color .3s ease, background-color .3s ease;
+    -moz-transition: border-color .3s ease, background-color .3s ease;
+    -o-transition: border-color .3s ease, background-color .3s ease;
+    transition: border-color .3s ease, background-color .3s ease;
 }
+
+.circle:hover{
+    border-color: white;
+    background-color: white;
+    color: #00a9d3;
+
+    -webkit-transition: border-color .3s ease, background-color .3s ease;
+    -moz-transition: border-color .3s ease, background-color .3s ease;
+    -o-transition: border-color .3s ease, background-color .3s ease;
+    transition: border-color .3s ease, background-color .3s ease;
+}
+
+.circle:hover i{
+    font-size: 10em;
+
+    -webkit-transition: font-size .6s ease;
+    -moz-transition: font-size .6s ease;
+    -o-transition: font-size .6s ease;
+    transition: font-size .6s ease;
+}
+
 .circle i {
     margin: 0 auto;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    -webkit-transition: font-size .3s ease;
+    -moz-transition: font-size .3s ease;
+    -o-transition: font-size .3s ease;
+    transition: font-size .3s ease;
+}
+
+.partners {
+    height: 290px;
+    background-color: #dedede;
+}
+
+.partners img {
+    filter: grayscale(100%);
+}
+
+.partners img:hover {
+    filter: grayscale(0%);
+}
+
+footer {
+    background-color: #00a9d3;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* FIXINS */
+
+.row {
+    margin-right: 0px !important;
 }
