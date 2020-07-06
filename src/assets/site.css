@@ -5,11 +5,11 @@ body {
 /* TEXT */
 
 .title {
-    font-size: 90px;
+    font-size: 76px;
 }
 
 .subtitle {
-    font-size: 42px;
+    font-size: 36px;
 }
 
 .dark-rounded-bg {
@@ -44,7 +44,7 @@ section {
     height: 100%;
     background-image: url(./imgs/stationwork_1.jpg);
     background-repeat: no-repeat;
-    filter: opacity(.15);
+    filter: opacity(.08);
 }
 
 .section-two{
@@ -66,10 +66,11 @@ section {
 
 .circle {
     border-radius: 50%;
-    border: 10px solid #00a9d3;
+    border: 7px solid #00a9d3;
     width: 200px;
     height: 200px;
     display: inline-block;
+    margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     position: relative;
@@ -130,7 +131,6 @@ section {
 }
 
 .section-four {
-    height: 290px;
     background-color: #dedede;
 }
 .section-four img {

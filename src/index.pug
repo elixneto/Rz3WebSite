@@ -16,9 +16,9 @@ html
     body
         section.section-one
             .section-inside
-                text.title
+                span.title
                     b.cs-text-cyan.dark-rounded-bg &nbsp;Rz3&nbsp;
-                    span &nbsp;Sistemas
+                span.title &nbsp;Sistemas
                 p.subtitle.cs-text-cyan
                     b soluções em software
                 h1 &nbsp;
@@ -27,20 +27,20 @@ html
         section.section-two
             .section-inside
                 .row
-                    .col.text-white.text-center
+                    .col-md.text-white.text-center
                         .circle
                             i.far.fa-address-card.fa-6x
                         h1 Websites
                         br
                         h4.cs-text-light-grey Criação de sites personalizados. Desde páginas pessoais até ecommerces e lojas virtuais.
-                    .col.text-white.text-center
+                    .col-md.text-white.text-center
                         .circle
                             i.fas.fa-mobile-alt.fa-6x
                         h1 Mobile Apps
                         br
                         h4.cs-text-light-grey Desenvolvimento de aplicativos para smartphones Android e iOS
 
-                    .col.text-white.text-center
+                    .col-md.text-white.text-center
                         .circle
                             i.fas.fa-hands-helping.fa-6x
                         h1 Outsourcing
@@ -50,42 +50,40 @@ html
         .section-four
             br
             .subtitle.text-center
-                b Clientes & Parceiros
+                b Nossos Clientes
             br
             br
             .row
-                .col
+                .col-md
                     br
                     | &nbsp;
                     img(src="./assets/imgs/partners/tce_logo.png" height="40px")
-                .col
+                .col-md
                     img(src="./assets/imgs/partners/ergovitalis_logo.png" height="80px")
-                .col
+                .col-md
                     p
                     img(src="./assets/imgs/partners/pontox_logo.png" height="65px")
-                .col
+                .col-md
                     img(src="./assets/imgs/partners/paulinho_logo.png" height="90px")
-                .col
+                .col-md
                     p
                     img(src="./assets/imgs/partners/ibi_logo.png" height="70px")
-
+            br
+            br
         section
             br
             b.title.cs-text-cyan Contato
             br
             br
-            .row
-                .col
-                .col
-                    form
-                        .form-group
-                            input.form-control(type="email" placeholder="Informe seu email")
-                        .form-group
-                            textarea.form-control(placeholder="Escreva-nos um email e assim que possível entraremos em contato" rows="5")
-                        .form-group
-                            button.btn.btn-outline-success Enviar email
-                .col    
-            br
+            .container
+                form
+                    .form-group
+                        input.form-control(type="email" placeholder="Informe seu email")
+                    .form-group
+                        textarea.form-control(placeholder="Escreva-nos um email e assim que possível entraremos em contato" rows="5")
+                    .form-group
+                        button.btn.btn-outline-success Enviar email
+                br
 
     footer
         .row
