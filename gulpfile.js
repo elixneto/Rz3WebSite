@@ -15,4 +15,9 @@ gulp.task('assets', function () {
         .pipe(gulp.dest('./dist/assets'));
 });
 
-gulp.task('build', gulp.parallel('pug', 'assets'));
+gulp.task('favicon', function () {
+    return gulp.src('./src/favicon.ico')
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build', gulp.parallel('pug', 'assets', 'favicon'));
