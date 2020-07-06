@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/elixneto/Rz3WebSite#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
     "conscientstyle": "2.0.3"
   },
   "devDependencies": {

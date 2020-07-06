@@ -1,0 +1,77 @@
+body {
+    overflow-x: hidden;
+}
+
+/* TEXT */
+
+.title {
+    font-size: 90px;
+}
+
+.subtitle {
+    font-size: 42px;
+}
+
+.dark-rounded-bg {
+    background-color: #292929;
+    border-radius: 20px;
+}
+
+/* SECTIONS */
+
+section {
+    position: relative;
+    text-align: center;
+    display: table;
+    height: 750px;
+    width: 100%;
+}
+
+.section-inside {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-one::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/stationwork_1.jpg);
+    background-repeat: no-repeat;
+    filter: opacity(.08);
+}
+
+.section-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/words.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(.03);
+}
+
+.circle {
+    border-radius: 50%;
+    border: 5px solid #00a9d3;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.circle i {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
